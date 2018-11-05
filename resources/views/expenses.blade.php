@@ -63,8 +63,7 @@ input {
 {{-- sales chart --}}
             <div class="row mt-4">
                 <div class="col-md-8">
-                    <div class="bg-white p-3 introduction"> 
-                            <a href='http://example.com/' data-intro='Hello step one! View your History'></a>
+                    <div class="bg-white p-3"> 
                         <div class="row">
                             <div class="col-md-5">
                                 <h4 class="sale-h3">Monthly sales</h4>
@@ -93,36 +92,36 @@ input {
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="bg-white p-3  data-step="2" data-intro="Here is your performance" data-position='right' data-scrollTo='tooltip'">
-                        <h4 class="sale-h4">Top Sales</h4>
+                    <div class="bg-white p-3">
+                        <h4 class="sale-h4">Most Expenses Transaction</h4>
                         <table class="table table-striped table-hover">
                             <thead class="sale-head">
                               <tr>
                                 <th scope="col">Products</th>
-                                <th scope="col">Number sold</th>
                                 <th scope="col">Amount</th>
+                                <th scope="col">Payment Mode</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">Cars</a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal" >33</a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">12,000</a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal" >33,000</a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">GTB</a></td>
                               </tr>
                               <tr>
                                 <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">Furnitures</a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">55</a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">68,000</a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">55,000</a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">Access Bank</a></td>
                               </tr>
                               <tr>
                                 <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">Phone</a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">45 </a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">23123 </a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">45,000 </a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">Access  </a></td>
                               </tr>
                               <tr>
                                 <td> <a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">Car </a></td>
-                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">33 </a></td>
-                                <td> <a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">12,000 </a></td>
+                                <td><a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">33,000 </a></td>
+                                <td> <a href="" class="right-modal" data-toggle="modal" data-target="#exampleModal">GTB </a></td>
                                 </tr>
                             </tbody>
                           </table>
@@ -136,7 +135,7 @@ input {
     <section id="sale-table">
         <div class="container mt-4">
                 <div class="row p-3">
-                    <div id="addNew" class="btn btn-addSale data-step="3" data-intro="Want your transaction? Here is it."  data-position='left'" >Add Sales</div>            
+                    <div id="addNew" class="btn btn-addSale" >Add Expenses</div>            
                     <div id="" class="btn btn-success ml-2">Filter</div>
                 </div>
             <div class="bg-white mt">

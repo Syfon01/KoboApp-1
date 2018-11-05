@@ -19,49 +19,37 @@
 
 </head>
 <body>
-        <div id="load"></div>
-   
-    <section id="login pt-5">
-        <div class="container pt-5">
-
-            <div class="row">
-                <div class="col-md-7 login-bg ">
-                    <div class="login-cover pt-5 pb-5 ">
-                        <p class="login-p pt-5">
-                                Koboaccountant is a simple platform where SMEs and Accountants can work together on their bookkeeping services, save money and time without compromising expertise.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-5 login-kobo">
+    <div id="load"></div>
+         <section id="particles"></section>
+           <div id="login pt-5">
+            <div class="container pt-5">               
+                <div class="col-md-6 login-kobo">
                     <div class=" p-3">
-                            <div class="pb-4">
-                                    <img src="{{asset('img/logo.svg')}}" alt="logo" srcset="" class="img-fluid logo">
-                            </div>
+                        <div class="pb-4">
+                            <img src="{{asset('img/logo.svg')}}" alt="logo" srcset="" class="img-fluid logo">
+                        </div>
 
                             <h5 class="login-h2 pb-3 text-white">
                                 Sign in to Kobo Accountant
                             </h5>
                             <form>
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <input type="name" class="form-control" id="exampleInputname" aria-describedby="" placeholder="Email or Username" required="">
-                                        </div>
+                                <div class="form-group">
+                                    <div class="input-box">
+                                        <input type="name" class="form-control" id="exampleInputname" aria-describedby="" placeholder="Email or Username" required="">
                                     </div>
-                                    <div class="form-group">
-                                        <div class="input-box">
-                                            <input type="password" class="form-control" id="exampleInputEmail1"  aria-describedby="" placeholder="Password" required="">
-                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-box">
+                                        <input type="password" class="form-control" id="exampleInputEmail1"  aria-describedby="" placeholder="Password" required="">
                                     </div>
+                                </div>
 
-                                    <div class="">
-                                        <label>
-                                                <input type="checkbox"  name="remember" class="text-white"> Remember me
-                                        </label>
-                                        <spa class="forgot"><a href="#" class="login-forgot pull-right">Forgot Password?</a></spa>
-                                    </div>
+                                <div class="">
+                                    <label>
+                                        <input type="checkbox"  name="remember" class="text-white"> Remember me
+                                    </label>
+                                    <spa class="forgot"><a href="#" class="login-forgot pull-right">Forgot Password?</a></spa>
+                                </div>
                                 <a class="btn btn-loginn" href="/login" role="button"><span>Login</span></a>
 
                             </form>
@@ -70,11 +58,13 @@
                 </div> 
             </div>
         </div>
-    </section>
-
+    
 
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+<script src="{{asset('js/particles.js')}}"></script>
+<script src="{{asset('js/appp.js')}}"></script>
+
 
 </body>
 </html>

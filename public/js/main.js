@@ -8,6 +8,11 @@
     }
   };
 
+  // <script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+
 
 /*=============
 landing page
@@ -39,11 +44,11 @@ var header = document.getElementById("navLink");
 var links = header.getElementsByClassName("nav-link");
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
+    var current = document.getElementsByClassName("activ");
     if (current.length > 0) { 
-      current[0].className = current[0].className.replace(" active", "");
+      current[0].className = current[0].className.replace(" activ", "");
     }
-    this.className += " active";
+    this.className += " activ";
   });
   
 
@@ -86,21 +91,35 @@ jQuery(document).ready(function($) {
 });
 
 // sales table
-$("#addNew").click(function () { 
+function addRow(tableID) {
 
-  $("#mainTable").each(function () {
-     
-      var tds = '<tr>';
-      jQuery.each($('tr:last td', this), function () {
-          tds += '<td>' + $(this).html() + '</td>';
-      });
-      tds += '</tr>';
-      if ($('tbody', this).length > 0) {
-          $('tbody', this).append(tds);
-      } else {
-          $(this).append(tds);
-      }
-  });
-  });
+    var table = document.getElementById(tableID);
+    
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+    
+    var colCount = table.rows[1].cells.length;
+    
+    for(var i=0; i<colCount; i++) {
+    
+        var newcell	= row.insertCell(i);
+    
+        newcell.innerHTML = table.rows[4].cells[i].innerHTML;
+        //alert(newcell.childNodes);
+        switch(newcell.childNodes[0].type) {
+            case "text":
+                    newcell.childNodes[0].value = "";
+                    break;
+            case "checkbox":
+                    newcell.childNodes[0].checked = false;
+                    break;
+            case "select-one":
+                    newcell.childNodes[0].selectedIndex = 0;
+                    break;
+        }
+    }
+    }
+      
   
-  
+  // intro js
+

@@ -9,14 +9,36 @@ login page
     background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.75)
 }
 
+body{
+  /* background: blue; */
+  margin: 0;
+  padding: 0;
+  background: #a7a6a6b0;
+
+}
+
+#particles{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #666; */
+  /* z-index: -1; */
+}
+
 
 #login{
     width: 90%;
-    margin: 0px auto;
+    margin: auto;
+    position:absolute;
+      width: 100%;
+      text-align: center;
+      background: transparent;
+      z-index: -2;
 }
 
 .login-kobo{
-background: rgba(0, 15, 16, 0.8);
+  background: rgba(0, 15, 16, 0.8);
+  margin: auto;
 }
 .logo{
     width: 120px;

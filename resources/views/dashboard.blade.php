@@ -2,6 +2,43 @@
 
 @section('content')
 
+{{-- modal section --}}
+{{-- first modal --}}
+<div class="modal hide fade m-auto" id="myModal" tabindex="-1" role="dialog">
+    <div class=" modal-dialog modal-dialog-centered" role="document">
+      <div class="container p-5 modal-content">
+            <div class="modal-body text-center">
+                <h5 class="modal-h5">Welcome Ola &#x1f642 !!!</h5>
+                <h5 class="h5 pt-3">SETUP AN OPENING ACCOUNT</h5>
+                <p class="modal-account">Setup your account by providing some details about your Debtors, Creditors, Value of existing assets and Rent. This will help the accountant to easily start taking records of you company.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-started mr-auto"> <a href="/opening-asset" target="_blank">Get Started</a> </button>
+                <button type="button" class="btn btn-login pr-4 pl-4" data-dismiss="modal" data-toggle="modal" data-target="#exampleModalCenter">Skip</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+{{-- second modal --}}
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="container p-5 modal-content">
+                        <div class="modal-body text-center">
+                            <h5 class="modal-h5">Hi Ola &#x1f642 !!!</h5>
+                            <p class="modal-account pt-3">You can continue without providing the details but your records might not be detailed. Do you wish to continue ?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-started mr-auto" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-login pr-4 pl-4"><a href="/opening-asset" target="_blank"> Continue</a></button>
+                        </div>
+                </div>
+        </div>
+</div>
+
+{{-- end of modal --}}
+
 {{-- heading section --}}
     <section id="history">
         <div class="container mt-5">
@@ -21,7 +58,7 @@
                     <div class="bg-white pt-2">
                         <div class="rounded-circlee ml-5 mt-3"></div>
                         <ul class="history">
-                        <h5 class="h5 pl-5 pt-4">HISTORY</h5>
+                            <h5 class="h5 pl-5 pt-4">HISTORY</h5>
                             <li class="history-list">
                                 <a href="" class="history-link" >Recent Transaction</a>
                             </li>
@@ -75,7 +112,7 @@
 
             {{-- transaction --}}
             <div class="col-md-8 ">
-                <div class="bg-white p-4">
+                <div class="bg-white p-4" >
                     <h5 class="h5">TRANSACTION</h5>
                     {{-- transaction chart --}}
                     <div style="">

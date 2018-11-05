@@ -101,7 +101,7 @@ header{
 
     /* nav-link */
     
-    .active, .nav-link:hover {
+    .activ, .nav-link:hover {
         color: #00C259 !important;
         border-bottom:3px solid #00C259;
 

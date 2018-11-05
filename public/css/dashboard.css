@@ -1,3 +1,12 @@
+.modal-account{
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+.modal-h5{
+    color: #666;
+    font-weight: bold;
+}
 .btn-accountant{
     background: #00C259;
     color: #fff;
@@ -18,16 +27,16 @@
     font-size: 14px;
 }
 .col-total{
-font-weight: bold;
-color: #00C259;
+    font-weight: bold;
+    color: #00C259;
 }
 .col-expenses{
-font-weight: bold;
-color: #FF8800;
+    font-weight: bold;
+    color: #FF8800;
 }
 .col-net{
-font-weight: bold;
-color: #0C8AE1;
+    font-weight: bold;
+    color: #0C8AE1;
 }
 .circle{
     border-radius: 50%;

@@ -31,6 +31,23 @@ Route::get('/sales', function () {
     return view('sales');
 });
 
+Route::get('/expenses', function () {
+    return view('expenses');
+});
+
+Route::get('/assets', function () {
+    return view('opening-asset');
+});
+
+Route::get('/debtors', function () {
+    return view('opening-debtors');
+});
+
+Route::get('/creditors', function () {
+    return view('opening-creditors');
+});
+
+
 Route::get('/header', function () {
     return view('layouts.app');
 });
